@@ -1,0 +1,156 @@
+.read-page {
+  background-color: var(--blue);
+  color: var(--white);
+  padding: var(--spacing-20) 0 var(--spacing-25) 0;
+  display: grid;
+  gap: var(--spacing-10);
+  position: relative;
+  max-width: 1024px;
+  margin: auto;
+}
+
+.read-page .right-img {
+  position: absolute;
+  width: 150px;
+  right: 0;
+}
+
+.read-page h1 {
+  font-family: var(--font-oswald);
+  font-size: var(--font-size-10);
+  font-weight: var(--weight-semibold);
+  line-height: 1.2;
+  z-index: 1;
+  padding: 0 var(--spacing-20);
+}
+
+.minister-info {
+  padding: 0 var(--spacing-20);
+  z-index: 1;
+}
+
+.content {
+  font-weight: var(--weight-light);
+  font-size: var(--font-size-2);
+  padding: 0 var(--spacing-20);
+}
+
+.content h2 {
+  font-family: var(--font-oswald);
+  font-size: var(--font-size-7);
+  margin: var(--spacing-5) 0;
+}
+
+.content img {
+  width: 100%;
+  margin: var(--spacing-5) 0;
+}
+
+.more-solutions {
+  display: grid;
+  gap: var(--spacing-10);
+  margin-top: var(--spacing-20);
+  padding: 0 var(--spacing-20);
+  position: relative;
+}
+
+.divider-img {
+  width: 100px;
+  position: absolute;
+  top: -50px;
+}
+
+.more-solutions h2 {
+  font-family: var(--font-oswald);
+  font-size: var(--font-size-8);
+  font-weight: var(--weight-semibold);
+  text-align: center;
+}
+
+.more-solutions h2 a {
+  color: var(--orange);
+}
+
+.no-solutions {
+  display: grid;
+  place-items: center;
+  place-content: center;
+  font-family: var(--font-oswald);
+  font-weight: var(--weight-semibold);
+  font-size: var(--font-size-6);
+  padding: var(--spacing-20) 0;
+  gap: var(--spacing-2);
+  color: var(--white);
+}
+
+.no-solutions svg {
+  font-size: var(--font-size-10);
+}
+
+.groups {
+  display: grid;
+  grid-template-columns: 1fr 40px 1fr;
+  gap: var(--spacing-6);
+}
+
+.group {
+  display: grid;
+  gap: var(--spacing-10);
+}
+
+.mobile-track {
+  display: none;
+}
+
+.track {
+  display: grid;
+  justify-content: center;
+  width: 40px;
+  height: calc(100% + 80px);
+  position: relative;
+}
+
+.line {
+  width: 2px;
+  background-color: var(--white);
+  opacity: 0.6;
+  height: 100%;
+}
+
+@media (width <= 800px) {
+  .content {
+    column-count: 1;
+  }
+}
+
+@media (width <= 750px) {
+  .read-page .left-img {
+    display: none;
+  }
+  .read-page h1 {
+    padding: 0 var(--spacing-5);
+  }
+  .minister-info {
+    padding: 0 var(--spacing-5);
+  }
+  .content {
+    padding: 0 var(--spacing-5);
+  }
+  .more-solutions {
+    padding: 0 var(--spacing-10);
+  }
+  .groups {
+    grid-template-columns: 40px 1fr;
+  }
+  .mobile-track {
+    position: relative;
+    display: grid;
+    justify-content: center;
+    grid-row: 1 / 3;
+    height: calc(100% + 80px);
+    width: 40px;
+  }
+  .track {
+    display: none;
+  }
+}

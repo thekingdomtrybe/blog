@@ -1,0 +1,14 @@
+.blue-button {
+  background-color: var(--blue-1);
+  border: none;
+  outline: none;
+  color: var(--white);
+  padding: var(--spacing-3) var(--spacing-4);
+  font-size: var(--font-size-1);
+  transition: 0.3s scale, 0.3s background-color;
+}
+
+.blue-button:active:hover {
+  scale: 0.95;
+  background-color: var(--blue-2);
+}

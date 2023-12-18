@@ -1,0 +1,15 @@
+.circles-divider {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-6);
+  margin: var(--spacing-10) 0;
+}
+
+.circles-divider div {
+  background-color: var(--white);
+  border-radius: var(--radius-circle);
+  width: var(--size-6);
+  height: var(--size-6);
+}

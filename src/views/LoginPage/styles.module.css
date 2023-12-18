@@ -1,0 +1,49 @@
+.login-page {
+  background-color: var(--blue);
+  color: var(--white);
+  height: 100vh;
+  display: grid;
+  position: relative;
+}
+
+.login-form {
+  display: grid;
+  gap: var(--spacing-3);
+  padding: var(--spacing-10);
+  background-color: var(--blue-1);
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+}
+
+.form-header {
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  align-items: center;
+}
+
+.login-form h1 {
+  font-family: var(--font-oswald);
+  font-weight: var(--weight-bold);
+  font-size: var(--font-size-8);
+}
+
+.buttons {
+  margin-bottom: var(--spacing-6);
+}
+
+.login-form button {
+  padding: var(--spacing-3);
+  font-size: var(--font-size-2);
+  font-weight: var(--weight-bold);
+  background-color: var(--blue-3);
+}
+
+.login-form a {
+  color: var(--white-1);
+  font-size: var(--font-size-1);
+  font-weight: var(--weight-medium);
+  text-align: center;
+  text-decoration: none;
+  margin-top: var(--spacing-5);
+}

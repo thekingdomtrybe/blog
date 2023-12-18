@@ -1,0 +1,20 @@
+.confirm-account-page {
+  background-color: var(--blue);
+  color: var(--white);
+  padding: var(--spacing-40) var(--spacing-10);
+  display: grid;
+  gap: var(--spacing-5);
+  place-items: center;
+}
+
+.confirm-account-page h1 {
+  font-family: var(--font-oswald);
+  font-weight: var(--weight-bold);
+  font-size: var(--font-size-8);
+}
+
+.confirm-account-page p {
+  font-size: var(--font-size-1);
+  max-width: 330px;
+  text-align: center;
+}

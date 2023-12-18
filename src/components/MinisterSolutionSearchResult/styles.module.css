@@ -1,0 +1,41 @@
+.container {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  align-items: center;
+  padding: var(--spacing-2);
+  gap: var(--spacing-6);
+  background-color: var(--orange-1);
+  color: var(--white);
+}
+
+.solution-header {
+  display: grid;
+  gap: var(--spacing-1);
+  align-content: center;
+  justify-items: start;
+}
+
+.name {
+  font-family: var(--font-playfair);
+  font-size: var(--font-size-2);
+  font-weight: var(--weight-semibold);
+  text-transform: uppercase;
+}
+
+.read-btn {
+  display: grid;
+  background: none;
+  border: none;
+  font-size: var(--font-size-1);
+  font-weight: var(--weight-extrabold);
+  color: var(--orange);
+}
+
+.solution-description {
+  font-size: var(--font-size-1);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  height: max-content;
+  overflow: hidden;
+}

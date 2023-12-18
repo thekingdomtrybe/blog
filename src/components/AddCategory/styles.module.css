@@ -1,0 +1,38 @@
+.add-category-form {
+  display: grid;
+  padding: var(--spacing-4);
+  gap: var(--spacing-4);
+  color: var(--white);
+  background-color: var(--blue-1);
+}
+
+.form-header {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-title {
+  font-family: var(--font-oswald);
+  font-size: var(--font-size-5);
+  font-weight: var(--weight-bold);
+}
+
+.add-category-form > input,
+.add-category-form > textarea {
+  font-family: var(--font-inter);
+  font-weight: var(--weight-medium);
+  background-color: var(--blue);
+  color: var(--white);
+  border: none;
+  outline: none;
+  padding: var(--spacing-3);
+  resize: none;
+  line-height: 1.6;
+}
+
+.add-category-form > input::placeholder,
+.add-category-form > textarea::placeholder {
+  color: var(--blue-2);
+}

@@ -1,0 +1,59 @@
+.update-minister-page {
+  background-color: var(--blue);
+  color: var(--white);
+  padding: var(--spacing-20) var(--spacing-10);
+  display: grid;
+  gap: var(--spacing-10);
+  position: relative;
+  overflow: hidden;
+}
+
+.bg {
+  position: absolute;
+  width: 150px;
+}
+
+.bg1 {
+  position: absolute;
+  width: 150px;
+  right: 0;
+  top: 70vh;
+}
+
+.update-minister-page h1 {
+  font-family: var(--font-oswald);
+  font-weight: var(--weight-bold);
+  font-size: var(--font-size-8);
+  text-align: center;
+  z-index: 1;
+}
+
+.update-minister-form {
+  padding: var(--spacing-6);
+  display: grid;
+  gap: var(--spacing-5);
+  background-color: var(--blue-1);
+  max-width: 500px;
+  width: 100%;
+  margin: auto;
+  z-index: 1;
+}
+
+.update-minister-form textarea {
+  background-color: var(--blue);
+  border: none;
+  outline: none;
+  resize: none;
+  color: var(--white);
+  padding: var(--spacing-4);
+  font-family: var(--font-inter);
+  line-height: 1.6;
+}
+
+.update-minister-form h2 {
+  font-size: var(--font-size-4);
+}
+
+.update-minister-form textarea::placeholder {
+  color: var(--blue-2);
+}

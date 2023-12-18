@@ -1,0 +1,15 @@
+.orange-button {
+  background-color: var(--orange);
+  border: none;
+  outline: none;
+  color: var(--white);
+  padding: var(--spacing-2) var(--spacing-4);
+  font-size: var(--font-size-1);
+  font-weight: var(--weight-semibold);
+  transition: 0.3s scale, 0.3s background-color;
+}
+
+.orange-button:active:hover {
+  scale: 0.95;
+  background-color: var(--orange-3);
+}

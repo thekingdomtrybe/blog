@@ -1,0 +1,101 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-4);
+  background-color: var(--blue);
+  color: var(--white);
+  padding: var(--spacing-10);
+  position: relative;
+  transition: 0.5s background-color;
+}
+
+.container img {
+  position: absolute;
+  width: 150px;
+  transform: 0.4s all;
+}
+
+.ask-text {
+  display: grid;
+  gap: var(--spacing-3);
+  align-content: center;
+  z-index: 1;
+}
+
+.ask-text-title {
+  font-family: var(--font-oswald);
+  font-weight: var(--weight-semibold);
+  font-size: var(--font-size-9);
+  transition: 0.2s transform;
+  transform-origin: left;
+  animation-delay: 0.3s;
+}
+
+.ask-text p {
+  font-size: var(--font-size-1);
+  font-weight: var(--weight-light);
+  line-height: 1.7;
+  max-width: 500px;
+  animation-delay: 0.5s;
+}
+
+.ask-form {
+  padding: var(--spacing-5);
+  display: grid;
+  gap: var(--spacing-4);
+  z-index: 1;
+  animation-delay: 0.7s;
+}
+
+.ask-form-heading {
+  display: grid;
+  grid-template-columns: max-content auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ask-form-heading button {
+  border-radius: var(--radius-circle);
+  padding: var(--spacing-3);
+  display: grid;
+  place-items: center;
+}
+
+.ask-form-title {
+  font-size: var(--font-size-6);
+  font-weight: var(--weight-bold);
+  font-family: var(--font-oswald);
+}
+
+.ask-form textarea {
+  font-family: var(--font-oswald);
+  font-size: var(--font-size-4);
+  background-color: var(--blue-5);
+  border: none;
+  outline: none;
+  resize: none;
+  padding: var(--spacing-2);
+  color: var(--white);
+}
+
+.active {
+  background-color: var(--blue-4);
+}
+
+.active .ask-text-title {
+  transform: scale(1.1);
+}
+
+.active img {
+  width: 100px;
+}
+
+@media (width <= 600px) {
+  .container {
+    grid-template-columns: auto;
+  }
+
+  .container img {
+    display: none;
+  }
+}

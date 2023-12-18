@@ -1,0 +1,90 @@
+.preview-page {
+  background-color: var(--blue);
+  color: var(--white);
+  padding: var(--spacing-20) 0;
+  display: grid;
+  gap: var(--spacing-10);
+  position: relative;
+  max-width: 1024px;
+  margin: auto;
+}
+
+.preview-page .right-img {
+  position: absolute;
+  width: 300px;
+  top: -150px;
+  right: 0;
+}
+
+.preview-page .left-img {
+  position: absolute;
+  width: 300px;
+  top: -150px;
+  left: -150px;
+}
+
+.preview-page h1 {
+  font-family: var(--font-oswald);
+  font-size: var(--font-size-10);
+  font-weight: var(--weight-semibold);
+  line-height: 1.2;
+  z-index: 1;
+  padding: 0 var(--spacing-20);
+}
+
+.minister-info-controls {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  padding: 0 var(--spacing-20);
+  z-index: 1;
+}
+
+.preview-controls {
+  display: grid;
+  background-color: var(--blue);
+  grid-template-columns: max-content max-content;
+  gap: var(--spacing-3);
+  padding: var(--spacing-1);
+  border: 4px solid var(--blue-1);
+}
+
+.preview-controls div {
+  background-color: var(--blue-1);
+  width: var(--size-8);
+  height: var(--size-8);
+}
+
+.content {
+  font-weight: var(--weight-light);
+  font-size: var(--font-size-1);
+  line-height: 1.7;
+  text-align: justify;
+  padding: 0 var(--spacing-20);
+}
+
+.content h2 {
+  font-family: var(--font-oswald);
+  font-size: var(--font-size-7);
+  margin: var(--spacing-5) 0;
+}
+
+.content img {
+  width: 100%;
+  margin: var(--spacing-5) 0;
+}
+
+@media (width <= 750px) {
+  .preview-page .left-img {
+    display: none;
+  }
+  .preview-page h1 {
+    padding: 0 var(--spacing-5);
+  }
+  .minister-info {
+    padding: 0 var(--spacing-5);
+  }
+  .content {
+    padding: 0 var(--spacing-10);
+  }
+}

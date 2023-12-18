@@ -1,0 +1,116 @@
+.container {
+  display: grid;
+  height: max-content;
+  color: var(--white);
+  position: relative;
+  gap: var(--spacing-6);
+  width: 100%;
+  z-index: 1;
+  text-decoration: none;
+  justify-content: center;
+  opacity: 0.8;
+  transition: 0.3s opacity;
+}
+
+.solution-img {
+  height: 250px;
+  max-width: 500px;
+  background-color: var(--blue-1);
+}
+
+.solution-img img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.solution-info {
+  display: grid;
+  gap: var(--spacing-5);
+  color: var(--white);
+  max-width: 500px;
+  text-decoration: none;
+}
+
+.solution-title {
+  font-family: var(--font-oswald);
+  text-transform: uppercase;
+  font-weight: var(--weight-semibold);
+  font-size: var(--font-size-6);
+}
+
+.solution-info p {
+  font-size: var(--font-size-1);
+  font-weight: var(--weight-light);
+  line-height: 1.7;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
+.edit-controls {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 500px;
+  top: var(--spacing-3);
+  display: grid;
+  grid-template-columns: max-content max-content;
+  justify-content: end;
+  gap: var(--spacing-2);
+  z-index: 2;
+  padding: 0 var(--spacing-2);
+}
+
+.edit-controls a {
+  background-color: var(--orange);
+  border: none;
+  color: var(--white);
+  padding: var(--spacing-2);
+  font-size: var(--font-size-1);
+  transition: 0.3s scale, 0.3s background-color;
+  text-decoration: none;
+}
+
+.edit-controls a:active:hover {
+  scale: 0.95;
+  background-color: var(--orange-3);
+}
+
+.container::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: var(--radius-circle);
+  background-color: var(--orange);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -53.5px;
+  transform-origin: 50%;
+  transition: 0.3s scale;
+}
+
+.align-right::after {
+  left: initial;
+  right: -54px;
+}
+
+.container:hover {
+  opacity: 1;
+}
+
+.container:hover::after {
+  scale: 1.1;
+}
+
+@media (width <= 750px) {
+  .align-right::after {
+    left: -53.5px;
+    right: initial;
+  }
+}

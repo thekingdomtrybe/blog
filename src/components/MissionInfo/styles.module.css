@@ -1,0 +1,53 @@
+.mission-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: end;
+  background-color: var(--blue);
+  color: var(--white);
+  padding: var(--spacing-10) var(--spacing-20);
+  gap: var(--spacing-6);
+}
+
+.mission-img {
+  background-color: var(--blue-1);
+  height: 300px;
+  width: 100%;
+  z-index: 1;
+  animation-delay: 0.5s;
+}
+
+.mission-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mission-text {
+  display: grid;
+  gap: var(--spacing-3);
+  text-align: right;
+  max-width: 500px;
+  z-index: 1;
+}
+
+.mission-text-heading {
+  font-family: var(--font-oswald);
+  font-weight: var(--weight-semibold);
+  font-size: var(--font-size-7);
+  animation-delay: 0.7s;
+}
+
+.mission-text p {
+  font-size: var(--font-size-1);
+  font-weight: var(--weight-light);
+  line-height: 1.7;
+  animation-delay: 0.3s;
+}
+
+@media (width <= 600px) {
+  .mission-info {
+    grid-template-columns: auto;
+    padding: var(--spacing-10);
+  }
+}

@@ -1,0 +1,22 @@
+.container {
+  background-color: var(--blue-1);
+  display: grid;
+}
+
+.input {
+  background-color: var(--blue);
+  border: none;
+  outline: none;
+  color: var(--white);
+  font-size: var(--font-size-2);
+  padding: var(--spacing-3);
+  width: 100%;
+}
+
+.input::placeholder {
+  color: var(--blue-2);
+}
+
+.bold {
+  font-weight: var(--weight-bold);
+}

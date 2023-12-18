@@ -1,0 +1,33 @@
+.container {
+  background-color: var(--blue-3);
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: var(--spacing-4);
+  padding: var(--spacing-4);
+  width: 100%;
+}
+
+.icon {
+  width: var(--size-6);
+  height: var(--size-6);
+  display: grid;
+  place-items: center;
+}
+
+.icon svg {
+  font-size: var(--font-size-6);
+  color: var(--blue-2);
+}
+
+.input {
+  background-color: var(--blue-3);
+  border: none;
+  outline: none;
+  color: var(--white);
+  font-size: var(--font-size-2);
+  width: 100%;
+}
+
+.input::placeholder {
+  color: var(--blue-2);
+}

@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color-scheme: light dark;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --white: rgb(255 255 255);
+  --white-1: rgb(200 200 200);
+
+  --orange: rgb(255 103 0);
+  --orange-1: rgb(255 103 0 / 0.7);
+  --orange-2: rgb(255 103 0 / 0.5);
+  --orange-3: rgb(255 123 0);
+
+  --blue: rgb(0 40 104);
+  --blue-1: rgb(3 49 124);
+  --blue-2: rgb(3 49 150);
+  --blue-3: rgb(0 40 104 / 0.8);
+  --blue-4: rgb(37, 74, 153);
+  --blue-5: rgba(1, 39, 114, 0.796);
+  /* --blue-3: rgba(27, 80, 107, 0.8); */
+
+  --font-playfair: 'Playfair Display', serif;
+  --font-inter: 'Inter', sans-serif;
+  --font-oswald: 'Oswald', sans-serif;
+
+  --weight-light: 300;
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+  --weight-extrabold: 800;
+  --weight-black: 900;
+
+  --size-half: 2px;
+  --size-1: 4px;
+  --size-2: 8px;
+  --size-3: 12px;
+  --size-4: 16px;
+  --size-5: 20px;
+  --size-6: 24px;
+  --size-7: 28px;
+  --size-8: 32px;
+  --size-9: 36px;
+  --size-10: 40px;
+  --size-15: 60px;
+  --size-20: 80px;
+  --size-40: 160px;
+  --size-50: 200px;
+
+  --spacing-1: 4px;
+  --spacing-2: 8px;
+  --spacing-3: 12px;
+  --spacing-4: 16px;
+  --spacing-5: 20px;
+  --spacing-6: 24px;
+  --spacing-7: 28px;
+  --spacing-8: 32px;
+  --spacing-9: 36px;
+  --spacing-10: 40px;
+  --spacing-15: 60px;
+  --spacing-20: 80px;
+  --spacing-25: 100px;
+  --spacing-40: 160px;
+
+  --font-size-1: 0.75rem;
+  --font-size-2: 0.875rem;
+  --font-size-3: 1rem;
+  --font-size-4: 1.125rem;
+  --font-size-5: 1.25rem;
+  --font-size-6: 1.5rem;
+  --font-size-7: 1.75rem;
+  --font-size-8: 2rem;
+  --font-size-9: 2.25rem;
+  --font-size-10: 2.625rem;
+
+  --radius-1: 2px;
+  --radius-2: 4px;
+  --radius-3: 6px;
+  --radius-4: 8px;
+  --radius-5: 10px;
+  --radius-circle: 50%;
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+#root {
+  background-color: var(--blue);
+}
+
+#root {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--blue-4);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--blue-2);
+}
+
+.loader {
+  display: grid;
+  place-items: center;
+  place-content: center;
+  height: 100vh;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.animate {
+  animation-delay: 0.5s;
+  animation: animate 0.5s ease-in-out forwards;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(30px);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+img {
+  user-select: none;
+}

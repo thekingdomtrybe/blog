@@ -48,6 +48,10 @@
 @media (width <= 600px) {
   .mission-info {
     grid-template-columns: auto;
-    padding: var(--spacing-10);
+    padding: var(--spacing-5);
+  }
+
+  .mission-img {
+    width: 95%;
   }
 }

@@ -130,6 +130,6 @@
   .browse-form {
     grid-template-columns: auto;
     gap: var(--spacing-10);
-    padding: var(--spacing-20) var(--spacing-10);
+    padding: var(--spacing-20) var(--spacing-5);
   }
 }

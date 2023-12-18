@@ -89,8 +89,9 @@ function CategoryPage() {
       <img className={Styles.bg} src="/bg.png" alt="" />
       <div className={Styles['category-info-search']}>
         <div className={Styles['category-info']}>
+        <h1 className="hidden">{category.name.toUpperCase()}</h1>
           <img src={category.image.url} alt="" className="hidden" />
-          <h1 className="hidden">{category.name.toUpperCase()}</h1>
+          {/* <img src="https://images.unsplash.com/photo-1515162816999-a0c47dc192f7?q=80&w=2670&auto=format&fit=crop&ixlib" alt="" className="hidden" /> */}
           <p className="hidden">
             {category.description}
           </p>

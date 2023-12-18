@@ -90,12 +90,12 @@ function LandingPage({
           )
         }
       </section>
-      <section className={`hidden ${Styles['recently-published']}`}>
-        <div className={Styles['mobile-track']}>
-            <div className={Styles.line} />
-        </div>
-        {
-          articles.length > 0 && (
+      {
+        articles.length > 0 && (
+          <section className={`hidden ${Styles['recently-published']}`}>
+            <div className={Styles['mobile-track']}>
+              <div className={Styles.line} />
+            </div>
             <div className={Styles.groups}>
               <div className={Styles.group}>
                 {
@@ -152,21 +152,21 @@ function LandingPage({
                 }
               </div>
             </div>
-          )
-        }
-        {
-          articles.length === 0 && (
-            <div className={Styles['no-solutions']}>
-              <h2>RECENTLY PUBLISHED</h2>
+          </section>
+        )
+      }
+      {
+        articles.length === 0 && (
+          <div className={Styles['no-solutions']}>
+            <h2>RECENTLY PUBLISHED</h2>
 
-              <div className={Styles['no-solutions-content']}>
-                <Notes />
-                No Solutions
-              </div>
+            <div className={Styles['no-solutions-content']}>
+              <Notes />
+              No Solutions
             </div>
-          )
-        }
-      </section>
+          </div>
+        )
+      }
       <Ask />
     </>
   )

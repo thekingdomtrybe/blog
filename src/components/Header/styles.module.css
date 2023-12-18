@@ -69,7 +69,14 @@
 }
 
 @media (max-width: 768px) {
+  .header {
+  background-color: var(--blue-2);
+
+  }
   .nav {
     display: none;
+  }
+  .account-link a {
+    padding: var(--spacing-4);
   }
 }

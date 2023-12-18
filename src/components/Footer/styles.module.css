@@ -138,5 +138,6 @@
   .footer-content {
     grid-template-columns: auto;
     gap: var(--spacing-10);
+    padding: var(--spacing-10) 0;
   }
 }

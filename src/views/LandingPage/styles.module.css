@@ -111,9 +111,17 @@
   color: var(--white);
 }
 
+.no-solutions {
+  padding: var(--spacing-20) 0;
+}
+
 .no-solutions h2 {
   margin: 0 auto;
   text-align: center;
+  color: var(--white);
+  font-family: var(--font-oswald);
+  font-weight: var(--weight-semibold);
+  font-size: var(--font-size-8);
 }
 
 .no-solutions-content {
@@ -180,6 +188,11 @@
   }
 
   .categories-section h2 {
-    padding: var(--spacing-10);
+    padding: var(--spacing-5);
+    text-decoration: underline;
+  }
+
+  .recently-published {
+    padding: var(--spacing-15) var(--spacing-2);
   }
 }

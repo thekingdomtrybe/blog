@@ -12,7 +12,7 @@
 
 .logo {
   padding: var(--spacing-4);
-  background-color: var(--blue-2);
+  /* background-color: var(--blue-2); */
   text-decoration: none;
   display: grid;
   grid-template-columns: auto auto;
@@ -60,7 +60,7 @@
 
 .account-link a {
   padding: var(--spacing-4) var(--spacing-8);
-  background-color: var(--blue-2);
+  /* background-color: var(--blue-2); */
   color: var(--white);
   text-decoration: none;
   font-family: var(--font-oswald);

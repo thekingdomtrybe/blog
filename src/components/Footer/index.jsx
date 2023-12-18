@@ -30,15 +30,15 @@ function Footer() {
             </li>
             <li>
               <div className={Styles.img}>
-                <Youtube />
-              </div>
-              <a href="https://www.youtube.com/@tktglobal" rel="noreferrer" target="_blank">@TKTGLOBAL</a>
-            </li>
-            <li>
-              <div className={Styles.img}>
                 <Instagram />
               </div>
               <a href="https://www.instagram.com/tktglobal" rel="noreferrer" target="_blank">TKTGLOBAL</a>
+            </li>
+            <li>
+              <div className={Styles.img}>
+                <Youtube />
+              </div>
+              <a href="https://www.youtube.com/@tktglobal" rel="noreferrer" target="_blank">@TKTGLOBAL</a>
             </li>
             <li>
               <div className={Styles.img}>

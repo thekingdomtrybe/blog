@@ -65,6 +65,7 @@
   font-size: var(--font-size-8);
   font-weight: var(--weight-semibold);
   text-align: center;
+  z-index: 1;
 }
 
 .more-solutions h2 a {
@@ -137,7 +138,7 @@
     padding: 0 var(--spacing-5);
   }
   .more-solutions {
-    padding: 0 var(--spacing-10);
+    padding: 0 var(--spacing-10) 0 var(--spacing-5);
   }
   .groups {
     grid-template-columns: 40px 1fr;

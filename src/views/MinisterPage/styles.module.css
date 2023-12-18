@@ -130,6 +130,7 @@
 .group {
   display: grid;
   gap: var(--spacing-10);
+  align-content: start;
 }
 
 .mobile-track {

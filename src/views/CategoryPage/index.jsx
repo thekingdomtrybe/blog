@@ -57,19 +57,7 @@ function CategoryPage() {
   );
   if (!isSuccess) return <></>;
 
-  const firstArticleGroup = loadedArticles.map((article, index) => (index % 2 === 0) ? (
-    <Solution
-      key={article.id}
-      id={article.id}
-      title={article.title}
-      content={article.html}
-      date={article.created_at}
-      image={parser.parseFromString(article.html, 'text/html').querySelector('img')?.src}
-      align="right"
-    />
-  ): null)
-
-  const secondArticleGroup = loadedArticles.map((article, index) => (index % 2 === 1) ? (
+  const articleComponents = loadedArticles.map((article) => (
     <Solution
       key={article.id}
       id={article.id}
@@ -78,7 +66,7 @@ function CategoryPage() {
       date={article.created_at}
       image={parser.parseFromString(article.html, 'text/html').querySelector('img')?.src}
     />
-  ): null)
+  ))
 
   const loadMore = () => {
     setNumArticlesLoaded(numArticlesLoaded + 6);
@@ -86,15 +74,15 @@ function CategoryPage() {
 
   return (
     <main className={Styles['category-page']}>
-      <img className={Styles.bg} src="/bg.png" alt="" />
-      <div className={Styles['category-info-search']}>
+      <section className={Styles['info-section']}>
         <div className={Styles['category-info']}>
-        <h1 className="hidden">{category.name.toUpperCase()}</h1>
-          <img src={category.image.url} alt="" className="hidden" />
-          {/* <img src="https://images.unsplash.com/photo-1515162816999-a0c47dc192f7?q=80&w=2670&auto=format&fit=crop&ixlib" alt="" className="hidden" /> */}
+          <h1 className="hidden">{category.name.toUpperCase()}</h1>
           <p className="hidden">
             {category.description}
           </p>
+        </div>
+        <div className={Styles['category-img']}>
+          <img className="hidden" src={category.image.url} alt="" />
         </div>
 
         <div className={`hidden ${Styles.search}`}>
@@ -103,12 +91,11 @@ function CategoryPage() {
             params={`category_id=${category.id}`}
           />
         </div>
-      </div>
-      <div className={Styles.solutions}>
+      </section>
+
+      <section className={Styles.solutions}>
         <h2 className="hidden">
-          SOLUTIONS IN THIS
-          {' '}
-          <span>CATEGORY</span>
+          SOLUTIONS IN THIS CATEGORY
         </h2>
         {
           loadedArticles.length === 0 && (
@@ -118,35 +105,15 @@ function CategoryPage() {
             </div>
           )
         }
+        <div className={Styles['solutions-container']}>
+          {articleComponents}
+        </div>
         {
           loadedArticles.length > 0 && (
-            <div className={Styles.groups}>
-              <div className={Styles.group}>
-                {firstArticleGroup}
-              </div>
-              <div className={Styles.track}>
-                <div className={Styles.line} />
-                {
-                  articles.length > 0 && (
-                    <OrangeButton text={isArticlesLoading ? 'Loading' : 'Load More'} type="button" onClick={loadMore} />
-                  )
-                }
-              </div>
-              <div className={Styles['mobile-track']}>
-                <div className={Styles.line} />
-                {
-                  articles.length > 0 && (
-                    <OrangeButton text={isArticlesLoading ? 'Loading' : 'Load More'} type="button" onClick={loadMore} />
-                  )
-                }
-              </div>
-              <div className={Styles.group}>
-                {secondArticleGroup}
-              </div>
-            </div>
+            <OrangeButton text={isArticlesLoading ? 'Loading' : 'Load More'} type="button" onClick={loadMore} />
           )
         }
-      </div>
+      </section>
     </main>
   )
 }

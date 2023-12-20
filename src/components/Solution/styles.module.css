@@ -114,3 +114,9 @@
     right: initial;
   }
 }
+
+@media (width <= 600px) {
+  .container::after {
+    display: none;
+  }
+}

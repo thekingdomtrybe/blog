@@ -158,16 +158,15 @@ function MinisterPage() {
                   )
                 }
               </div>
-              <div className={Styles['mobile-track']}>
-                <div className={Styles.line} />
+              <div className={Styles.group}>
+                {secondArticleGroup}
+              </div>
+              <div className={Styles['mobile-load-more-btn']}>
                 {
                   articles.length > 0 && (
                     <OrangeButton text={isArticlesLoading ? 'Loading' : 'Load More'} type="button" onClick={loadMore} />
                   )
                 }
-              </div>
-              <div className={Styles.group}>
-                {secondArticleGroup}
               </div>
             </div>
           )

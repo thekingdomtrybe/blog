@@ -38,7 +38,6 @@ function ReadPage() {
       </div>
       <div className={Styles.content} dangerouslySetInnerHTML={{__html: data.article.html}} />
       <div className={Styles['more-solutions']}>
-        <img alt="" src="/bg.png" className={Styles['divider-img']} />
         <h2>
           MORE SOLUTIONS FROM
           {' '}
@@ -82,9 +81,6 @@ function ReadPage() {
                 }
               </div>
               <div className={Styles.track}>
-                <div className={Styles.line} />
-              </div>
-              <div className={Styles['mobile-track']}>
                 <div className={Styles.line} />
               </div>
               <div className={Styles.group}>

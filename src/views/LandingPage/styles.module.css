@@ -9,7 +9,7 @@
   color: var(--white);
   font-family: var(--font-oswald);
   font-weight: var(--weight-semibold);
-  font-size: var(--font-size-8);
+  font-size: var(--font-size-7);
   padding: 0 var(--spacing-20);
 }
 .category-list {
@@ -72,7 +72,7 @@
   color: var(--white);
   font-family: var(--font-oswald);
   font-weight: var(--weight-semibold);
-  font-size: var(--font-size-8);
+  font-size: var(--font-size-7);
   max-width: 500px;
   width: 100%;
   justify-self: center;
@@ -144,19 +144,13 @@
 @media (width <= 750px) {
   .recently-published {
     display: grid;
-    grid-template-columns: 65px 1fr;
+    grid-template-columns: 1fr;
   }
   .recently-published .groups {
     grid-template-columns: 1fr;
   }
   .recently-published .group:last-child {
     order: -1;
-  }
-  .recently-published .mobile-track {
-    display: grid;
-    justify-content: center;
-    width: 40px;
-    height: 100%;
   }
   .recently-published .track {
     display: none;
@@ -183,16 +177,15 @@
 
 @media (width <= 600px) {
   .categories-section {
-    padding: 0;
+    padding: var(--spacing-5) 0 0;
     gap: 0;
   }
 
   .categories-section h2 {
-    padding: var(--spacing-5);
-    text-decoration: underline;
+    padding: 0 var(--spacing-5) var(--spacing-5);
   }
 
   .recently-published {
-    padding: var(--spacing-15) var(--spacing-10) var(--spacing-15) var(--spacing-4);
+    padding: var(--spacing-15) var(--spacing-5);
   }
 }

@@ -9,8 +9,8 @@
 
 .minister-photo {
   background-color: var(--white);
-  width: var(--size-10);
-  height: var(--size-10);
+  width: var(--size-15);
+  height: var(--size-15);
   border-radius: var(--radius-circle);
   overflow: hidden;
 }
@@ -29,11 +29,12 @@
 .minister-name {
   color: var(--white);
   font-weight: var(--weight-semibold);
-  font-size: var(--font-size-1);
+  font-size: var(--font-size-2);
   width: max-content;
 }
 
 .publication-date {
   font-size: var(--font-size-1);
   font-weight: var(--weight-light);
+  line-height: 1.5;
 }

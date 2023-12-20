@@ -1,5 +1,5 @@
 .search {
-  background-color: var(--blue-2);
+  background-color: var(--blue-1);
   color: var(--white);
   display: grid;
   grid-template-rows: auto auto 1fr;
@@ -39,7 +39,6 @@
 }
 
 .search-results {
-  background-color: var(--blue-1);
   list-style: none;
   padding: var(--spacing-1);
   display: grid;

@@ -6,7 +6,7 @@
 }
 
 .editor-heading-h2 {
-  font-family: var(--font-playfair);
+  font-family: var(--font-oswald);
   font-size: var(--font-size-6);
   font-weight: var(--weight-bold);
   margin-bottom: var(--spacing-2);

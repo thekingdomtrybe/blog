@@ -117,7 +117,7 @@ function LoginPage() {
             text="MINISTER"
             onClick={() => setCurrentEntity('minister')}
             style={{
-              backgroundColor: currentEntity === 'minister' ? 'var(--white-1)' : '',
+              backgroundColor: currentEntity === 'minister' ? 'var(--white)' : '',
               color: currentEntity === 'minister' ? 'var(--blue-1)' : '',
             }}
           />
@@ -125,7 +125,7 @@ function LoginPage() {
             text="ADMIN"
             onClick={() => setCurrentEntity('admin')}
             style={{
-              backgroundColor: currentEntity === 'admin' ? 'var(--white-1)' : '',
+              backgroundColor: currentEntity === 'admin' ? 'var(--white)' : '',
               color: currentEntity === 'admin' ? 'var(--blue-1)' : '',
             }}
           />

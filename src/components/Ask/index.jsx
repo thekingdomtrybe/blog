@@ -34,7 +34,7 @@ function Ask() {
 
   return (
     <div className={`${Styles.container} ${active && Styles.active}`}>
-      <img alt="" src="bg.png" />
+      <img alt="" src="bg.png" className="bg" />
       <div className={Styles['ask-text']}>
         <span className={`hidden ${Styles['ask-text-title']}`}>
           COULDN&apos;T FIND WHAT YOU

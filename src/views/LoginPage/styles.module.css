@@ -40,7 +40,7 @@
 }
 
 .login-form a {
-  color: var(--white-1);
+  color: var(--white);
   font-size: var(--font-size-1);
   font-weight: var(--weight-medium);
   text-align: center;

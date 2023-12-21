@@ -12,7 +12,6 @@
 
 .logo {
   padding: var(--spacing-4);
-  /* background-color: var(--blue-2); */
   text-decoration: none;
   display: grid;
   grid-template-columns: auto auto;
@@ -22,6 +21,14 @@
 
 .favicon {
   height: var(--size-6);
+}
+
+.light-mode {
+  display: var(--hide-light);
+}
+
+.dark-mode {
+  display: var(--show-light);
 }
 
 .logo-text {

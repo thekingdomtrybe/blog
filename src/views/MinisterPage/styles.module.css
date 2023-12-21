@@ -198,6 +198,9 @@
   }
   .mobile-load-more-btn {
     display: grid;
+    max-width: 500px;
+    width: 100%;
+    justify-self: center;
   }
 }
 

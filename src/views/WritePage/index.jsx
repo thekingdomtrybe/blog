@@ -92,8 +92,8 @@ function WritePage() {
 
   return (
     <main className={Styles['write-page']}>
-      <img alt="" src="bg.png" className={Styles['left-img']} />
-      <img alt="" src="bg.png" className={Styles['right-img']} />
+      <img alt="" src="bg.png" className={`bg ${Styles['left-img']}`} />
+      <img alt="" src="bg.png" className={`bg ${Styles['right-img']}`} />
       <div className={Styles['title-controls']}>
         <h1>CRAFT A SOLUTION</h1>
         <div className={Styles.input}>

@@ -28,7 +28,7 @@ function Search({
           components.push(
             <li key={result.id}>
               <Link to={`/${idDateString}/${titleURL}`}>
-                <img src="/bg.png" />
+                <img className="bg" src="/bg.png" />
                 <div>
                   <div className={Styles['result-title']}>{result.title}</div>
                   <div className={Styles['result-category']}>{result.category}</div>

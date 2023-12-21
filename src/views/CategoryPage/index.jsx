@@ -76,7 +76,10 @@ function CategoryPage() {
     <main className={Styles['category-page']}>
       <section className={Styles['info-section']}>
         <div className={Styles['category-info']}>
-          <h1 className="hidden">{category.name.toUpperCase()}</h1>
+          <div>
+            <p className={`${Styles.nav} hidden`}>BLOG / CATEGORIES / </p>
+            <h1 className="hidden">{category.name.toUpperCase()}</h1>
+          </div>
           <p className="hidden">
             {category.description}
           </p>

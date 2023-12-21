@@ -1,0 +1,26 @@
+.theme-switch {
+  position: fixed;
+  bottom: var(--spacing-6);
+  left: var(--spacing-6);
+  z-index: 100;
+}
+
+.theme-switch button {
+  background: var(--blue-2);
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: var(--spacing-2);
+  border-radius: var(--radius-4);
+  display: grid;
+  place-items: center;
+}
+
+.theme-switch button svg {
+  color: var(--white);
+}
+
+.theme-switch button:active:hover {
+  scale: 0.95;
+  background-color: var(--blue-2);
+}

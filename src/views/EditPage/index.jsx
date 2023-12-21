@@ -9,6 +9,7 @@ import { useIndexCategoriesQuery } from '../../data/categories';
 import BlueButton from '../../components/BlueButton';
 import { PreviewRounded, Publish, Save } from '@mui/icons-material';
 import Select from 'react-select';
+import Loader from '../../components/Loader/Loader';
 
 function EditPage() {
   const { id } = useParams();
@@ -99,7 +100,11 @@ function EditPage() {
     }
   }, [data, articleUpdated, published, navigate]);
 
-  if (articleLoading) return <div>loading...</div>;
+  if (articleLoading) return (
+    <div className="loader">
+      <Loader />
+    </div>
+  );
 
   return (
     <main className={Styles['edit-page']}>

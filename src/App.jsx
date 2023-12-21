@@ -21,6 +21,7 @@ import ConfirmAccountPage from './views/ConfirmAccountPage'
 import Data from './data/Data'
 import ProtectedRoute from './components/ProtectedRoute'
 import 'toastr/build/toastr.min.css'
+import ThemeSwitch from './components/ThemeSwitch'
 
 function App() {
   const location = useLocation();
@@ -112,6 +113,7 @@ function App() {
         />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
+      <ThemeSwitch />
       <Footer />
     </>
   )

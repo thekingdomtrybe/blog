@@ -1,8 +1,8 @@
 .loader {
-  color: #FFF;
+  color: var(--white);
   position: relative;
   font-size: 11px;
-  background: #FFF;
+  background: var(--white);
   animation: escaleY 1s infinite ease-in-out;
   width: 1em;
   height: 4em;
@@ -15,7 +15,7 @@
   position: absolute;
   top: 0;
   left: 2em;
-  background: #FFF;
+  background: var(--white);
   width: 1em;
   height: 4em;
   animation: escaleY 1s infinite ease-in-out;

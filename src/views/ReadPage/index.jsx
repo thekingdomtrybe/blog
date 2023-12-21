@@ -31,7 +31,7 @@ function ReadPage() {
 
   return (
     <main className={Styles['read-page']}>
-      <img alt="" src="/bg.png" className={Styles['right-img']} />
+      <img alt="" src="/bg.png" className={`bg ${Styles['right-img']}`} />
       <h1>{data.article.title}</h1>
       <div className={Styles['minister-info']}>
         <MinisterInfo date={articleDate} name={data.minister.name} image={data.minister.image} url={data.minister.url} />

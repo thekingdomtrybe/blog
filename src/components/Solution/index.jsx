@@ -23,8 +23,9 @@ function Solution({
   const idDateString = `${id}-${parsedDate.getDate()}-${parsedDate.getMonth()}-${parsedDate.getFullYear()}`;
   const titleURL = title.toLowerCase().replace(/(\s+)/g, ' ').trim().replace(/(\W)/g, '-').replace(/(-+)/g, '-')
 
-  const deleteSolution = () => {
-    deleteArticle(id);
+  const deleteSolution = async () => {
+    await deleteArticle(id);
+    window.location.reload();
   }
 
   const editControls = (

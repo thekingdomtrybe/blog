@@ -20,7 +20,7 @@
   border: none;
   outline: none;
   padding: var(--spacing-3);
-  color: white;
+  color: var(--white);
 }
 
 .search-placeholder {

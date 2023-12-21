@@ -15,9 +15,9 @@ function Welcome() {
         use the platform provided by this project to
         proffer solutions to these issues.
       </p>
-      <img className={Styles['bg-1']} alt="" src="bg.png" />
-      <img className={Styles['bg-2']} alt="" src="bg.png" />
-      <img className={Styles['bg-3']} alt="" src="bg.png" />
+      <img className={`bg ${Styles['bg-1']}`} alt="" src="bg.png" />
+      <img className={`bg ${Styles['bg-2']}`} alt="" src="bg.png" />
+      <img className={`bg ${Styles['bg-3']}`} alt="" src="bg.png" />
     </div>
   )
 }

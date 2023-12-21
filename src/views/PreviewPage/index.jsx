@@ -5,6 +5,7 @@ import { useReadArticleQuery, useUpdateArticleMutation } from '../../data/articl
 import BlueButton from '../../components/BlueButton';
 import { Edit, Publish } from '@mui/icons-material';
 import { useEffect, useState } from 'react';
+import Loader from '../../components/Loader/Loader';
 
 function PreviewPage() {
   const { id } = useParams();
@@ -47,7 +48,11 @@ function PreviewPage() {
     }
   }, [article, articleUpdated, navigate]);
 
-  if (isLoading) return <></>;
+  if (isLoading) return (
+    <div className="loader">
+      <Loader />
+    </div>
+  );
   const articleDate = new Date(data.article.created_at).toDateString();
 
   return (

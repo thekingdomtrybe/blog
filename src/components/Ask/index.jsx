@@ -34,7 +34,7 @@ function Ask() {
 
   return (
     <div className={`${Styles.container} ${active && Styles.active}`}>
-      <img alt="" src="bg.png" className="bg" />
+      <img loading="lazy" alt="" src="bg.png" className="bg" />
       <div className={Styles['ask-text']}>
         <span className={`hidden ${Styles['ask-text-title']}`}>
           COULDN&apos;T FIND WHAT YOU
@@ -42,13 +42,9 @@ function Ask() {
           WERE SEARCHING FOR?
         </span>
         <p className="hidden">
-          Lorem ipsum, dolor sit amet
-          consectetur adipisicing elit.
-          Repudiandae, explicabo numquam velit
-          inventore aliquam minus voluptate aut
-          necessitatibus eaque veniam iure sed!
-          Culpa, reprehenderit modi ipsam distinctio
-          sunt ex quas!
+          Or need clarification on something?
+          Ask us anything and our team will get back to you as soon as possible.
+          Include as much detail as possible about your query.
         </p>
       </div>
 

@@ -12,7 +12,7 @@ function Category({
   return (
     <Link to={`/category/${name.toLowerCase()}`} className={className}>
       <div className={Styles['category-img']}>
-        <img src={image} alt="" />
+        <img loading="lazy" src={image} alt="" />
       </div>
       <div className={Styles['category-text']}>
         <span className={Styles['category-name']}>{name.toUpperCase()}</span>

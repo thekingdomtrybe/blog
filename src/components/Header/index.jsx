@@ -15,8 +15,8 @@ function Header() {
   return (
     <header className={Styles.header}>
       <Link to="/" className={Styles.logo}>
-        <img src="https://i.ibb.co/gWkqhC3/favicon-white.png" alt="" className={`${Styles.favicon} ${Styles['light-mode']}`} />
-        <img src="https://i.ibb.co/jM6pSrF/favicon.png" alt="" className={`${Styles.favicon} ${Styles['dark-mode']}`} />
+        <img loading="lazy" src="https://i.ibb.co/gWkqhC3/favicon-white.png" alt="" className={`${Styles.favicon} ${Styles['light-mode']}`} />
+        <img loading="lazy" src="https://i.ibb.co/jM6pSrF/favicon.png" alt="" className={`${Styles.favicon} ${Styles['dark-mode']}`} />
         <div className={Styles['logo-text']}>
           THE KINGDOM TRYBE
         </div>

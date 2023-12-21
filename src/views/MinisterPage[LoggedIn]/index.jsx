@@ -130,7 +130,7 @@ function LoggedInMinisterPage() {
       <div className={Styles['minister-info-search']}>
         <div className={Styles['minister-info']}>
           <div className={Styles['minister-photo-actions']}>
-            <img src={minister.image.url} alt="" className={`hidden ${Styles['minister-photo']}`} />
+            <img loading="lazy" src={minister.image.url} alt="" className={`hidden ${Styles['minister-photo']}`} />
             <div className={`hidden ${Styles['minister-actions']}`}>
               <Link to="/update">
                 <BlueButton text="UPDATE PROFILE" />
@@ -153,7 +153,7 @@ function LoggedInMinisterPage() {
 
         <div className={`hidden ${Styles.search}`}>
           <Search
-            label="SEARCH YOUR SOLUTIONS"
+            label="SEARCH YOUR ARTICLES"
             onChange={(value) => {console.log(value)}}
             results={[]}
           />
@@ -163,7 +163,7 @@ function LoggedInMinisterPage() {
       <div className={Styles['construct-drafts']}>
         <div>
           <Link to="/write">
-            <BlueButton text="CONSTRUCT A SOLUTION" />
+            <BlueButton text="WRITE AN ARTICLE" />
           </Link>
         </div>
         <div className={`hidden ${Styles.drafts}`}>
@@ -197,13 +197,13 @@ function LoggedInMinisterPage() {
 
       <div className={Styles.solutions}>
         <h2 className="hidden">
-          YOUR SOLUTIONS
+          YOUR ARTICLES
         </h2>
         {
           loadedArticles.length === 0 && (
             <div className={`hidden ${Styles['no-solutions']}`}>
               <Notes />
-              No Solutions
+              No Articles
             </div>
           )
         }

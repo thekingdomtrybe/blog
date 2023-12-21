@@ -85,12 +85,12 @@ function CategoryPage() {
           </p>
         </div>
         <div className={Styles['category-img']}>
-          <img className="hidden" src={category.image.url} alt="" />
+          <img loading="lazy" className="hidden" src={category.image.url} alt="" />
         </div>
 
         <div className={`hidden ${Styles.search}`}>
           <Search
-            label={`SEARCH SOLUTIONS IN ${category.name.toUpperCase()}`}
+            label={`SEARCH ARTICLES IN ${category.name.toUpperCase()}`}
             params={`category_id=${category.id}`}
           />
         </div>
@@ -98,13 +98,13 @@ function CategoryPage() {
 
       <section className={Styles.solutions}>
         <h2 className="hidden">
-          SOLUTIONS IN THIS CATEGORY
+          ARTICLES IN THIS CATEGORY
         </h2>
         {
           loadedArticles.length === 0 && (
             <div className={`hidden ${Styles['no-solutions']}`}>
               <Notes />
-              No Solutions
+              No Articles
             </div>
           )
         }

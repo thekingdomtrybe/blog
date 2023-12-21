@@ -31,7 +31,7 @@ function ReadPage() {
 
   return (
     <main className={Styles['read-page']}>
-      <img alt="" src="/bg.png" className={`bg ${Styles['right-img']}`} />
+      <img loading="lazy" alt="" src="/bg.png" className={`bg ${Styles['right-img']}`} />
       <h1>{data.article.title}</h1>
       <div className={Styles['minister-info']}>
         <MinisterInfo date={articleDate} name={data.minister.name} image={data.minister.image} url={data.minister.url} />
@@ -39,7 +39,7 @@ function ReadPage() {
       <div className={Styles.content} dangerouslySetInnerHTML={{__html: data.article.html}} />
       <div className={Styles['more-solutions']}>
         <h2>
-          MORE SOLUTIONS FROM
+          MORE ARTICLES FROM
           {' '}
           <Link to={`/category/${data.category.name.toLowerCase()}`}>{data.category.name.toUpperCase()}</Link>
         </h2>
@@ -47,7 +47,7 @@ function ReadPage() {
           articlesToDisplay.length === 0 && (
             <div className={Styles['no-solutions']}>
               <Notes />
-              No Solutions
+              No Articles
             </div>
           )
         }

@@ -19,6 +19,7 @@
   font-family: var(--font-oswald);
   font-weight: var(--weight-semibold);
   font-size: var(--font-size-8);
+  text-transform: uppercase;
   transition: 0.2s transform;
   transform-origin: 0%;
   animation-delay: 0.3s;

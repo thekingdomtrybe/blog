@@ -65,7 +65,7 @@ function AdminPage({
       </div>
 
       <div className={Styles['ministers-controls']}>
-        <h2>MINISTERS</h2>
+        <h2>AUTHORS</h2>
         <ul>
           {
             ministers.map(minister => (

@@ -92,12 +92,12 @@ function WritePage() {
 
   return (
     <main className={Styles['write-page']}>
-      <img alt="" src="bg.png" className={`bg ${Styles['left-img']}`} />
-      <img alt="" src="bg.png" className={`bg ${Styles['right-img']}`} />
+      <img loading="lazy" alt="" src="bg.png" className={`bg ${Styles['left-img']}`} />
+      <img loading="lazy" alt="" src="bg.png" className={`bg ${Styles['right-img']}`} />
       <div className={Styles['title-controls']}>
-        <h1>CRAFT A SOLUTION</h1>
+        <h1>WRITE AN ARTICLE</h1>
         <div className={Styles.input}>
-          <Input bold placeholder="Solution Title" onChange={(e) => setTitle(e.target.value)} />
+          <Input bold placeholder="Article Title" onChange={(e) => setTitle(e.target.value)} />
         </div>
         <div className={Styles.controls}>
           <BlueButton title="Save Draft" onClick={saveDraft}>

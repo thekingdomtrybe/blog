@@ -111,10 +111,10 @@ function MinisterPage() {
 
   return (
     <main className={Styles['minister-page']}>
-      <img className={Styles.bg} src="bg.png" alt="" />
+      <img loading="lazy" className={Styles.bg} src="bg.png" alt="" />
       <div className={Styles['minister-info-search']}>
         <div className={Styles['minister-info']}>
-          <img src={minister.image.url} alt="" className={`hidden ${Styles['minister-photo']}`} />
+          <img loading="lazy" src={minister.image.url} alt="" className={`hidden ${Styles['minister-photo']}`} />
           <h1 className="hidden">{minister.name.toUpperCase()}</h1>
           <p className="hidden">
             {minister.description}
@@ -126,21 +126,21 @@ function MinisterPage() {
 
         <div className={`hidden ${Styles.search}`}>
           <Search
-            label={`SEARCH SOLUTIONS BY ${minister.name.toUpperCase()}`}
+            label={`SEARCH ARTICLES BY ${minister.name.toUpperCase()}`}
             params={`minister_id=${minister.id}`}
           />
         </div>
       </div>
-      <img className={Styles['bg-2']} src="bg-2.png" alt="" />
+      <img loading="lazy" className={Styles['bg-2']} src="bg-2.png" alt="" />
       <div className={Styles.solutions}>
         <h2 className="hidden">
-          SOLUTIONS BY THIS MINISTER
+          ARTICLES BY THIS AUTHOR
         </h2>
         {
           loadedArticles.length === 0 && (
             <div className={Styles['no-solutions']}>
               <Notes />
-              No Solutions
+              No Articles
             </div>
           )
         }

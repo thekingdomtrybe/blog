@@ -25,7 +25,7 @@ function Browse() {
           components.push(
             <li key={result.id}>
               <Link to={`/${idDateString}/${titleURL}`}>
-                <img className="bg" src="bg.png" />
+                <img loading="lazy" className="bg" src="bg.png" />
                 <div>
                   <div className={Styles['result-title']}>{result.title}</div>
                   <div className={Styles['result-category']}>{result.category}</div>
@@ -44,16 +44,11 @@ function Browse() {
     <form className={`${Styles['browse-form']} ${active && Styles.active}`}>
       <div className={`${Styles['browse-text-title-input']}`}>
         <span className={`hidden ${Styles['browse-text-title']}`}>
-          LOOKING FOR SOMETHING SPECIFIC?
+          Seeking Answers? Explore Our Blog for Tailored Insights
         </span>
         <p className="hidden">
-          Lorem ipsum, dolor sit amet
-          consectetur adipisicing elit.
-          Repudiandae, explicabo numquam velit
-          inventore aliquam minus voluptate aut
-          necessitatibus eaque veniam iure sed!
-          Culpa, reprehenderit modi ipsam distinctio
-          sunt ex quas!
+          Use our search feature to explore topics of interest.
+          Enter a keyword or phrase to get started.
         </p>
         <input
           onChange={(e) => {

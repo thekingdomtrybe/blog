@@ -51,7 +51,7 @@ function Solution({
   return (
     <div className={`hidden ${Styles.container} ${align === 'right' && Styles['align-right']}`}>
       <Link to={`/${idDateString}/${titleURL}`} className={Styles['solution-img']}>
-        <img src={image || fallbackImage} alt="" />
+        <img loading="lazy" src={image || fallbackImage} alt="" />
       </Link>
       {
         displayEditControls && editControls

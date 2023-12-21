@@ -50,8 +50,8 @@ function UpdateMinisterPage() {
 
   return (
     <main className={Styles['update-minister-page']}>
-      <img className={`bg ${Styles.bg}`} src="bg.png" alt="" />
-      <img className={`bg ${Styles.bg1}`} src="bg.png" alt="" />
+      <img loading="lazy" className={`bg ${Styles.bg}`} src="bg.png" alt="" />
+      <img loading="lazy" className={`bg ${Styles.bg1}`} src="bg.png" alt="" />
       <h1>CONFIGURE YOUR ACCOUNT</h1>
       <form className={Styles['update-minister-form']} onSubmit={submitForm}>
         <PhotoSelect defaultValue={minister.image.url} onChange={(file) => setUpdatedImageFile(file)} />

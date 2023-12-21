@@ -22,7 +22,7 @@ function AddMinister() {
       toastr.error(response.error.data.error);
     }
     if (response.data?.id) {
-      toastr.info('Minister added successfully');
+      toastr.info('Author added successfully');
       setName('');
       setEmail('');
     }
@@ -31,7 +31,7 @@ function AddMinister() {
   return (
     <form className={Styles['add-minister-form']} onSubmit={saveMinister}>
       <div className={Styles['form-header']}>
-        <span className={Styles['form-title']}>ADD A NEW MINISTER</span>
+        <span className={Styles['form-title']}>ADD A NEW AUTHOR</span>
         <BlueButton type="submit">
           <Save />
         </BlueButton>

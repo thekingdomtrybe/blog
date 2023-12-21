@@ -11,7 +11,7 @@ function MinisterInfo({
   return (
     <div className={Styles['minister-info']}>
       <div className={Styles['minister-photo']}>
-        <img src={image} alt="" />
+        <img loading="lazy" src={image} alt="" />
       </div>
       <div className={Styles['minister-details']}>
         {

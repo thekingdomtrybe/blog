@@ -57,8 +57,8 @@ function PreviewPage() {
 
   return (
     <main className={Styles['preview-page']}>
-      <img alt="" src="bg.png" className={Styles['left-img']} />
-      <img alt="" src="bg.png" className={Styles['right-img']} />
+      <img loading="lazy" alt="" src="bg.png" className={Styles['left-img']} />
+      <img loading="lazy" alt="" src="bg.png" className={Styles['right-img']} />
       <h1>{data.article.title}</h1>
       <div className={Styles['minister-info-controls']}>
         <MinisterInfo date={articleDate} name={data.minister.name} image={data.minister.image} />

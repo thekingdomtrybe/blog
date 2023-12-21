@@ -5,19 +5,18 @@ function Welcome() {
     <div className={Styles.container}>
       <h1 className="hidden">THE KINGDOM TRYBE BLOG</h1>
       <p className="hidden">
-        The gospel, when applied to human living
-        exposes a vast number of issues. This
-        project aims to address these issues in
-        an orderly fashion. Each issue falls into
-        one of a broader category according to the
-        area of life it sprang up from. Gifted and
-        trained ministers in these broader areas will
-        use the platform provided by this project to
-        proffer solutions to these issues.
+        In the fast-paced landscape of today&apos;s world,
+        navigating life&apos;s complexities can be daunting.
+        This initiative endeavors to explore the intersection
+        of modern living and timeless wisdom. Through this
+        platform, insightful writers will delve into a diverse
+        array of topics, offering perspectives, reflections,
+        and practical insights to empower individuals in their
+        journey through the intricacies of contemporary existence.
       </p>
-      <img className={`bg ${Styles['bg-1']}`} alt="" src="bg.png" />
-      <img className={`bg ${Styles['bg-2']}`} alt="" src="bg.png" />
-      <img className={`bg ${Styles['bg-3']}`} alt="" src="bg.png" />
+      <img loading="lazy" className={`bg ${Styles['bg-1']}`} alt="" src="bg.png" />
+      <img loading="lazy" className={`bg ${Styles['bg-2']}`} alt="" src="bg.png" />
+      <img loading="lazy" className={`bg ${Styles['bg-3']}`} alt="" src="bg.png" />
     </div>
   )
 }

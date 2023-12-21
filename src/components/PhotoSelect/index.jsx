@@ -37,7 +37,7 @@ function PhotoSelect({
       <div className={Styles['selected-photo']}>
         {
           image && (
-            <img src={image} alt="" />
+            <img loading="lazy" src={image} alt="" />
           )
         }
       </div>

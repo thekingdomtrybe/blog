@@ -14,7 +14,7 @@ function MinisterListItem({
 
   return (
     <li className={Styles.container}>
-      <img className={Styles.image} src={image} alt={name} />
+      <img loading="lazy" className={Styles.image} src={image} alt={name} />
       <span className={Styles.name}>{name}</span>
       <button className={Styles['remove-btn']} onClick={() => deleteMinister(id)}>
         <Delete />

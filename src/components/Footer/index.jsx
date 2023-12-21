@@ -66,6 +66,12 @@ function Footer() {
               </a>
             </li>
             <li>
+              <a href="https://discord.com/invite/uhKb8JXpjR" rel="noreferrer" target="_blank">
+                <LinkBox />
+                JOIN OUR COMMUNITY
+              </a>
+            </li>
+            <li>
               <a href="https://thekingdomtrybe.church/privacy-policy" rel="noreferrer" target="_blank">
                 <LinkBox />
                 PRIVACY POLICY

@@ -17,7 +17,7 @@ function CategoryListItem({
 
   return (
     <li className={Styles.container}>
-      <img className={Styles.image} src={image} alt={name} />
+      <img loading="lazy" className={Styles.image} src={image} alt={name} />
       <span className={Styles.name}>{name}</span>
       {
         showEdit && (

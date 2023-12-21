@@ -162,7 +162,7 @@ function LandingPage({
 
             <div className={Styles['no-solutions-content']}>
               <Notes />
-              No Solutions
+              No Articles
             </div>
           </div>
         )

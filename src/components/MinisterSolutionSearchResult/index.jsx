@@ -4,7 +4,7 @@ function MinisterSolutionSearchResult() {
   return (
     <li className={Styles.container}>
       <div className={Styles['solution-header']}>
-        <span className={Styles.name}>SOLUTION TITLE</span>
+        <span className={Styles.name}>ARTICLE TITLE</span>
         <button className={Styles['read-btn']}>READ</button>
       </div>
       <div className={Styles['solution-description']}>

@@ -24,7 +24,7 @@ function DraftSolution({
 
   return (
     <li className={Styles.container}>
-      <img src="/bg.png" className="bg" />
+      <img loading="lazy" src="/bg.png" className="bg" />
       <span className={Styles.name}>{title}</span>
       <div className={Styles.controls}>
         <Link to={`/${idDateString}/${titleURL}`} title="Read">

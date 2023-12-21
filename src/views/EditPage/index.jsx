@@ -108,12 +108,12 @@ function EditPage() {
 
   return (
     <main className={Styles['edit-page']}>
-      <img alt="" src="bg.png" className={Styles['left-img']} />
-      <img alt="" src="bg.png" className={Styles['right-img']} />
+      <img loading="lazy" alt="" src="bg.png" className={Styles['left-img']} />
+      <img loading="lazy" alt="" src="bg.png" className={Styles['right-img']} />
       <div className={Styles['title-controls']}>
-        <h1>EDIT SOLUTION</h1>
+        <h1>EDIT ARTICLE</h1>
         <div className={Styles.input}>
-          <Input bold placeholder="Solution Title" defaultValue={data.article.title} onChange={(e) => setTitle(e.target.value)} />
+          <Input bold placeholder="Article Title" defaultValue={data.article.title} onChange={(e) => setTitle(e.target.value)} />
         </div>
         <div className={Styles.controls}>
           <BlueButton title="Save Changes" onClick={saveChanges}>

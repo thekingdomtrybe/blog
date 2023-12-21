@@ -162,7 +162,7 @@
   height: 100%;
 }
 
-@media (width <= 1024px) {
+@media (max-width: 1024px) {
   .minister-info-search {
     padding: var(--spacing-10);
   }
@@ -171,7 +171,7 @@
   }
 }
 
-@media (width <= 750px) {
+@media (max-width: 750px) {
   .bg {
     right: 0;
   }
@@ -204,7 +204,7 @@
   }
 }
 
-@media (width <= 600px) {
+@media (max-width: 600px) {
   .minister-info-search {
     padding: var(--spacing-10) var(--spacing-5);
   }

@@ -63,7 +63,7 @@
   overflow: auto;
 }
 
-@media (width <= 750px) {
+@media (max-width: 750px) {
   .admin-page h2 {
     grid-column: 1;
   }

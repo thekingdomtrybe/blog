@@ -110,13 +110,13 @@
   height: 100%;
 }
 
-@media (width <= 800px) {
+@media (max-width: 800px) {
   .content {
     column-count: 1;
   }
 }
 
-@media (width <= 750px) {
+@media (max-width: 750px) {
   .read-page {
     padding: var(--spacing-10) 0 var(--spacing-15) 0;
   }

@@ -141,7 +141,7 @@
   font-size: var(--font-size-10);
 }
 
-@media (width <= 750px) {
+@media (max-width: 750px) {
   .recently-published {
     display: grid;
     grid-template-columns: 1fr;
@@ -175,7 +175,7 @@
   }
 }
 
-@media (width <= 600px) {
+@media (max-width: 600px) {
   .categories-section {
     padding: var(--spacing-5) 0 0;
     gap: 0;

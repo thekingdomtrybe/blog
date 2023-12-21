@@ -69,13 +69,13 @@
   background-color: var(--blue-1);
 }
 
-@media (width <= 1024px) {
+@media (max-width: 1024px) {
   .edit-page .right-img {
     display: none;
   }
 }
 
-@media (width <= 650px) {
+@media (max-width: 650px) {
   .title-controls h1 {
     grid-column: 1 / 2;
     font-size: var(--font-size-8);

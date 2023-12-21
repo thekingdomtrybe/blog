@@ -134,7 +134,7 @@
   padding: var(--spacing-3);
 }
 
-@media (width <= 600px) {
+@media (max-width: 600px) {
   .footer-content {
     grid-template-columns: auto;
     gap: var(--spacing-10);

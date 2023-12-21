@@ -57,7 +57,7 @@
   scale: 1.1;
 }
 
-@media (width <= 750px) {
+@media (max-width: 750px) {
   .container {
     flex: 0 1 100%;
     padding: var(--spacing-10) var(--spacing-7);

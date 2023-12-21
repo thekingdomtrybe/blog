@@ -74,7 +74,7 @@
   margin: var(--spacing-5) 0;
 }
 
-@media (width <= 750px) {
+@media (max-width: 750px) {
   .preview-page .left-img {
     display: none;
   }

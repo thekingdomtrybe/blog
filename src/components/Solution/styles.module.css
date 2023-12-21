@@ -108,14 +108,14 @@
   scale: 1.1;
 }
 
-@media (width <= 750px) {
+@media (max-width: 750px) {
   .align-right::after {
     left: -53.5px;
     right: initial;
   }
 }
 
-@media (width <= 600px) {
+@media (max-width: 600px) {
   .container::after {
     display: none;
   }

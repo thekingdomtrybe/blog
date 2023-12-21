@@ -220,7 +220,7 @@
   display: none;
 }
 
-@media (width <= 1024px) {
+@media (max-width: 1024px) {
   .minister-info-search {
     padding: var(--spacing-10);
   }
@@ -234,7 +234,7 @@
   }
 }
 
-@media (width <= 750px) {
+@media (max-width: 750px) {
   .minister-info-search {
     grid-template-columns: 1fr;
   }
@@ -259,7 +259,7 @@
   }
 }
 
-@media (width <= 600px) {
+@media (max-width: 600px) {
   .minister-info-search {
     padding: var(--spacing-10) var(--spacing-5);
   }

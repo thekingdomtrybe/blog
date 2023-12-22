@@ -114,7 +114,7 @@ function LoginPage() {
         </div>
         <div className={Styles.buttons}>
           <BlueButton
-            text="AUTHOR"
+            text="WRITER"
             onClick={() => setCurrentEntity('minister')}
             style={{
               backgroundColor: currentEntity === 'minister' ? 'var(--white)' : '',

@@ -94,7 +94,7 @@ function App() {
           </ProtectedRoute>
         } />
         <Route path="/minister/:url" element={
-          <ProtectedRoute fallback={<LoggedInMinisterPage />}>
+          <ProtectedRoute fallback={<LoggedInMinisterPage />} ministerOnly>
             <MinisterPage />
           </ProtectedRoute>
         } />

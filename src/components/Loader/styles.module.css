@@ -1,38 +1,19 @@
 .loader {
-  color: var(--white);
-  position: relative;
-  font-size: 11px;
-  background: var(--white);
-  animation: escaleY 1s infinite ease-in-out;
-  width: 1em;
-  height: 4em;
-  animation-delay: -0.16s;
+  width: 48px;
+  height: 48px;
+  border: 5px solid var(--white);
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
 }
 
-.loader:before,
-.loader:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 2em;
-  background: var(--white);
-  width: 1em;
-  height: 4em;
-  animation: escaleY 1s infinite ease-in-out;
-}
-
-.loader:before {
-  left: -2em;
-  animation-delay: -0.32s;
-}
-
-@keyframes escaleY {
-  0%, 80%, 100% {
-    box-shadow: 0 0;
-    height: 4em;
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
   }
-  40% {
-    box-shadow: 0 -2em;
-    height: 5em;
+  100% {
+    transform: rotate(360deg);
   }
 }

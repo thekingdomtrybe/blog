@@ -80,11 +80,6 @@
   transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
-body,
-#root {
-  background-color: var(--blue);
-}
-
 #root {
   max-width: 1600px;
   margin: 0 auto;
@@ -93,6 +88,7 @@ body,
 body {
   --white: rgb(255 255 255);
   --white-1: rgb(200 200 200);
+  --white-2: rgb(231, 222, 222);
 
   --orange: rgb(255 103 0);
   --orange-1: rgb(255 103 0 / 0.7);
@@ -105,6 +101,7 @@ body {
   --blue-3: rgb(0 40 104 / 0.8);
   --blue-4: rgb(37, 74, 153);
   --blue-5: rgba(1, 39, 114, 0.796);
+  --blue-6: rgb(66, 119, 203);
 
   --hide-light: block;
   --show-light: none;
@@ -113,6 +110,7 @@ body {
 .light {
   --white: black;
   --white-1: rgb(232, 229, 229);
+  --white-2: rgb(186, 186, 186);
 
   --orange: rgb(255, 196, 2);
   --orange-1: rgb(255 103 0 / 0.7);
@@ -125,6 +123,7 @@ body {
   --blue-3: rgb(255 255 255 / 0.8);
   --blue-4: rgb(200 200 200);
   --blue-5: rgba(243, 243, 243, 0.796);
+  --blue-6: rgba(72, 72, 72, 0.9);
 
   --hide-light: none;
   --show-light: block;

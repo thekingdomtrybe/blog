@@ -34,6 +34,7 @@ function App() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
+    document.body.style.background = 'var(--blue)';
   }, [location.pathname]);
 
   return (
